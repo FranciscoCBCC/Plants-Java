@@ -11,7 +11,7 @@ public abstract class Personagem {
     
     abstract void defenderSe();
     abstract void atacar();
-    void receberAtaque(){
+    public void receberAtaque(){
     	
     }
 

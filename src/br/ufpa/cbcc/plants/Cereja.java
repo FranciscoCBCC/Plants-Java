@@ -7,11 +7,15 @@ public class Cereja extends Plants{
     Cereja(const Cereja &){
     	
     };
-    void defenderSe();
-    void atacar();
-    void fazerFotossíntese();
-    void crescer();
-    void explodir();
+    @Override
+    public void defenderSe();
+    @Override
+    public void atacar();
+    @Override
+    public void fazerFotossíntese();
+    @Override
+    public void crescer();
+    public void explodir();
     
     protected boolean prontoParaExplodir;
 }

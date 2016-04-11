@@ -4,11 +4,15 @@ public class Ervilha extends Plants{
 	Ervilha(){
 		
 	};
-    void defenderSe();
-    void atacar();
-    void fazerFotossíntese();
-    void crescer();
-    void boosterAttack();
+	@Override
+    public void defenderSe();
+	@Override
+    public void atacar();
+	@Override
+    public void fazerFotossíntese();
+	@Override
+    public void crescer();
+    public void boosterAttack();
 
     private int qtErvilha;
     private int levelAttack;

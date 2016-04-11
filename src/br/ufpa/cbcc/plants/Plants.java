@@ -1,6 +1,13 @@
 package br.ufpa.cbcc.plants;
 
-public abstract class Plants extends Personagem {
+	public abstract class Plants extends Personagem {
+		public abstract class Plants extends Personagem implements Fusao{
+		
+		}
+		public abstract class Plants extends Personagem implements multiplicarPlanta{
+		
+		}
+
 	public Plants(){
 		
 	};

@@ -7,11 +7,15 @@ public class Girassol extends Plants{
     Girassol(const Girassol &){
     	
     };
-    void produzirSois();
-    void defenderSe();
-    void atacar();
-    void fazerFotossíntese();
-    void crescer();
+    public void produzirSois();
+    @Override
+    public void defenderSe();
+    @Override
+    public void atacar();
+    @Override
+    public void fazerFotossíntese();
+    @Override
+    public void crescer();
     
     private int quantidadeSois;
     
