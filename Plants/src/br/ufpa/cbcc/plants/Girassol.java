@@ -2,8 +2,9 @@ package br.ufpa.cbcc.plants;
 
 public class Girassol extends Plants{
 	Girassol(){
-		
-	};
+
+	} 
+	
     Girassol(const Girassol &){
     	
     };

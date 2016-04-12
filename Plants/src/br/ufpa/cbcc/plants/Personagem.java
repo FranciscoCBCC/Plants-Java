@@ -1,25 +1,37 @@
 package br.ufpa.cbcc.plants;
 
-public abstract class Personagem {
-	Personagem(){
-		
+public abstract class Personagem implements Atacavel {
+	public Personagem(){
+		System.out.println("Construtor padrao de Personagem criado");
 	}
 	
-    Personagem(const string &, int, int, int){
-    	
+    public Personagem(String nomePersonagem, int vida, int dano, int codigo){
+    	this.nomePersonagem = nomePersonagem;
+    	this.vida = vida;
+    	this.dano = dano;
+    	this.codigo = codigo;
+    }
+    
+    public void verificarStatus(boolean ativo){
+    	if (ativo != true){
+    		System.out.println("Personagem inativo");
+    	}
+    	else {
+    		System.out.println("Personagem Ativo");
+    	}
+    }
+    
+    public void diminuirHp(int vida){
+    	System.out.println("O HP de Personagem diminuiu");
     }
     
     abstract void defenderSe();
     abstract void atacar();
-    public void receberAtaque(){
-    	
-    }
-
+    
     protected String nomePersonagem;
-    protected int vida;
     protected int resistencia;
     protected int dano;
     protected boolean ativo;
     protected int codigo;
-    protected int life;
+    protected int vida;   
 }
