@@ -31,14 +31,36 @@ public class Cereja extends Plants{
     	System.out.println("Cereja pronta para explodir");
     }
     
+    @Override
+	public void verificarSatus(boolean ativo) {
+		if (ativo != true){
+    		System.out.println("Cereja inativa");
+    	}
+    	else {
+    		System.out.println("Cereja Ativa");
+    	}		
+	}
+    
     protected boolean prontoParaExplodir;
     
     public static void main(String[] args) {
 		Cereja cereja = new Cereja();
+		Ervilha ervilha = new Ervilha();
+		Girassol girassol = new Girassol();
 		
 		cereja.atacar();
 		cereja.defenderSe();
 		cereja.crescer();
 		cereja.fazerFotossíntese();
-	}
+		
+		ervilha.atacar();
+		ervilha.defenderSe();
+		ervilha.crescer();
+		ervilha.fazerFotossíntese();
+		
+		girassol.atacar();
+		girassol.defenderSe();
+		girassol.crescer();
+		girassol.fazerFotossíntese();
+	}	
 }
