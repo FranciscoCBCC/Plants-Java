@@ -15,8 +15,7 @@ public class Zumbi extends Personagem implements Atacavel{
     	}
     	else {
     		System.out.println("Zumbi Ativo");
-    	}
-		
+    	}	
 	}
 
 	@Override

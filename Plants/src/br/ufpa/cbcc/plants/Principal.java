@@ -45,6 +45,7 @@ public class Principal {
 				catch (Exception excessao){
 					System.out.print("\n\nExcedeu o limite do array, corrigir laco FOR: "+excessao);
 				}
+				
 				case 2:
 					System.exit(0);
 			}
