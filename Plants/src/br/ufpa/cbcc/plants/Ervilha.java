@@ -2,11 +2,10 @@ package br.ufpa.cbcc.plants;
 
 public class Ervilha extends Plants{
 	Ervilha(){
-		System.out.println("Construtor padrao de Ervilha criado");
+		//System.out.println("Construtor padrao de Ervilha criado");
 	}
 	
 	Ervilha(int qtErvilha, int levelAttack){
-		super(100,100);
 		this.qtErvilha = qtErvilha;
 		this.levelAttack = levelAttack;
 	}

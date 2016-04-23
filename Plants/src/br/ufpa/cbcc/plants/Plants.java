@@ -3,10 +3,14 @@ package br.ufpa.cbcc.plants;
 	public abstract class Plants extends Personagem implements Atacavel{
 		
 	public Plants(){
-		System.out.println("Construtor padrao de Plants criado");
+		super();
+		//System.out.println("Construtor padrao de Plants criado");
+		recarga = 0;
+		alcance = 0;		
 	}
 	
-	public Plants(float recarga, int alcance){
+	public Plants(String nomePersonagem, int resistencia, int dano, int codigo, int vida, float recarga, int alcance){
+		super(nomePersonagem, resistencia, dano, codigo, vida);
 		this.recarga = recarga;
 		this.alcance = alcance;
 	}
@@ -24,8 +28,8 @@ package br.ufpa.cbcc.plants;
     	System.out.println("O HP de Plants diminuiu");
     }
 	
-	abstract void defenderSe();
-	abstract void atacar();
+	public abstract void defenderSe();
+	public abstract void atacar();
 	abstract void fazerFotossíntese();
 	abstract void crescer();
     

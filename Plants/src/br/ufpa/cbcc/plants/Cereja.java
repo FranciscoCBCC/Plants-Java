@@ -1,13 +1,16 @@
 package br.ufpa.cbcc.plants;
+import br.ufpa.cbcc.zumbi.Zumbi;
 
 public class Cereja extends Plants{
 	Cereja(){
-		System.out.println("Construtor padrao de Cereja criado");
+		super();
+		//System.out.println("Construtor padrao de Cereja criado");
+		prontoParaExplodir = false;
 	}
 	
 	
-    Cereja(boolean prontoParaExplodir){
-    	super(100,100);
+    Cereja(String nomePersonagem, int resistencia, int dano, int codigo, int vida, float recarga, int alcance, boolean prontoParaExplodir){
+    	super(nomePersonagem, resistencia, dano, codigo, vida, recarga, alcance);
     	this.prontoParaExplodir = prontoParaExplodir;
     }
     
@@ -17,7 +20,9 @@ public class Cereja extends Plants{
     }
     @Override
     public void atacar(){
-    	System.out.println("Cereja atacou"); 	
+    	if(ativo){
+    		System.out.println("Cereja atacou");
+    	}
     }
     @Override
     public void fazerFotossíntese(){
@@ -42,25 +47,5 @@ public class Cereja extends Plants{
 	}
     
     protected boolean prontoParaExplodir;
-    
-    public static void main(String[] args) {
-		Cereja cereja = new Cereja();
-		Ervilha ervilha = new Ervilha();
-		Girassol girassol = new Girassol();
-		
-		cereja.atacar();
-		cereja.defenderSe();
-		cereja.crescer();
-		cereja.fazerFotossíntese();
-		
-		ervilha.atacar();
-		ervilha.defenderSe();
-		ervilha.crescer();
-		ervilha.fazerFotossíntese();
-		
-		girassol.atacar();
-		girassol.defenderSe();
-		girassol.crescer();
-		girassol.fazerFotossíntese();
-	}	
+    	
 }
