@@ -1,5 +1,6 @@
 package br.ufpa.cbcc.plants;
 
+
 public class Ervilha extends Plants{
 	Ervilha(){
 		//System.out.println("Construtor padrao de Ervilha criado");

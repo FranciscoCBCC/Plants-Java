@@ -1,5 +1,6 @@
 package br.ufpa.cbcc.plants;
 
+
 public class Girassol extends Plants{
 	Girassol(){
 		//System.out.println("Construtor padrao de Girassol criado");

@@ -1,6 +1,7 @@
 package br.ufpa.cbcc.plants;
 import br.ufpa.cbcc.zumbi.Zumbi;
 
+
 public class Cereja extends Plants{
 	Cereja(){
 		super();

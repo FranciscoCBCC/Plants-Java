@@ -2,6 +2,7 @@ package br.ufpa.cbcc.plants;
 import br.ufpa.cbcc.zumbi.Zumbi;
 import java.util.Scanner;
 
+
 public class Principal {
 
 	public static void main(String[] args) {

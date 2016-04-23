@@ -1,5 +1,6 @@
 package br.ufpa.cbcc.plants;
 
+
 public abstract class Personagem implements Atacavel {
 	public Personagem(){
 		//System.out.println("Construtor padrao de Personagem criado");

@@ -2,6 +2,7 @@ package br.ufpa.cbcc.zumbi;
 import br.ufpa.cbcc.plants.Atacavel;
 import br.ufpa.cbcc.plants.Personagem;
 
+
 public class Zumbi extends Personagem implements Atacavel{
 	public Zumbi(){
 		super();

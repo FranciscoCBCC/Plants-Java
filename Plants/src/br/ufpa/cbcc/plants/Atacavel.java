@@ -1,5 +1,6 @@
 package br.ufpa.cbcc.plants;
 
+
 public interface Atacavel {
 	//void verificarAcerto();
 	void verificarSatus(boolean ativo);
