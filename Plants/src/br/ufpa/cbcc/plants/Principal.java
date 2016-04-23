@@ -11,8 +11,7 @@ public class Principal {
 		Zumbi zumbi = new Zumbi();
 		
 		Personagem persons[] = {cereja, ervilha, girassol, zumbi};
-		Scanner ler = new Scanner(System.in);
-		
+		Scanner ler = new Scanner(System.in);	
 		
 		System.out.println("Plants VS Zombies");
 		System.out.println("\n1) Iniciar Jogo");

@@ -33,5 +33,4 @@ public class Zumbi extends Personagem implements Atacavel{
 		System.out.print("Zumbi defendeu-se");
 	}
 
-	
 }
