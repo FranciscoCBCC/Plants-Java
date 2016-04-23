@@ -3,10 +3,13 @@ package br.ufpa.cbcc.plants;
 
 public class Girassol extends Plants{
 	Girassol(){
+		super();
+		quantidadeSois = 0;
 		//System.out.println("Construtor padrao de Girassol criado");
 	} 
 	
-    Girassol(int quantidadeSois){
+	Girassol(String nomePersonagem, int resistencia, int dano, int codigo, int vida, float recarga, int alcance){
+		super(nomePersonagem, resistencia, dano, codigo, vida, recarga, alcance);
     	this.quantidadeSois = quantidadeSois;
     }
     

@@ -13,6 +13,7 @@ public abstract class Personagem implements Atacavel {
 	}
 	
     public Personagem(String nomePersonagem, int resistencia, int dano, int codigo, int vida){
+    	
     	//System.out.println("Construtor com parametro de Personagem criado");
     	this.nomePersonagem = nomePersonagem;
     	this.resistencia = resistencia;

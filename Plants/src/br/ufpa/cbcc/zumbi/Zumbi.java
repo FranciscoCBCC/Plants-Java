@@ -9,6 +9,10 @@ public class Zumbi extends Personagem implements Atacavel{
 		//System.out.print("Construtor padrao de Zumbi criado");
 	}
 	
+	public Zumbi(String nomePersonagem, int resistencia, int dano, int codigo, int vida){
+		super(nomePersonagem, resistencia, dano, codigo, vida);
+	}
+	
 	@Override
 	public void verificarSatus(boolean ativo) {
 		if (ativo != true){
