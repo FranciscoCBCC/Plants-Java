@@ -1,6 +1,7 @@
 package br.ufpa.cbcc.plants;
 
-	
+import javax.swing.JOptionPane;
+
 public class Ervilha extends Plants{
 	Ervilha(){
 		super();
@@ -17,12 +18,14 @@ public class Ervilha extends Plants{
 	
 	@Override
     public void defenderSe(){
-		System.out.println("Ervilha defendeu-se");
+		//System.out.println("Ervilha defendeu-se");
+		JOptionPane.showMessageDialog(null, "Ervilha defendeu-se");
     }
 	
 	@Override
     public void atacar(){
-		System.out.println("Ervilha atacou");		
+		//System.out.println("Ervilha atacou");	
+		JOptionPane.showMessageDialog(null, "Ervilha atacou");
 	}
 	
 	@Override

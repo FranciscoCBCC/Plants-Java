@@ -1,5 +1,6 @@
 package br.ufpa.cbcc.plants;
 
+import javax.swing.JOptionPane;
 
 public class Girassol extends Plants{
 	Girassol(){
@@ -19,12 +20,14 @@ public class Girassol extends Plants{
     
     @Override
     public void defenderSe(){
-    	System.out.println("Girassol defendeu-se");
+    	//System.out.println("Girassol defendeu-se");
+    	JOptionPane.showMessageDialog(null, "Girassol defendeu-se");
     }
     
     @Override
     public void atacar(){
-    	System.out.println("Girassol atacou");
+    	//System.out.println("Girassol atacou");
+    	JOptionPane.showMessageDialog(null, "Girassol atacou");
     }
     
     @Override

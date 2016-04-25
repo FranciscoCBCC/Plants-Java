@@ -1,4 +1,6 @@
 package br.ufpa.cbcc.plants;
+import javax.swing.JOptionPane;
+
 import br.ufpa.cbcc.zumbi.Zumbi;
 
 
@@ -17,12 +19,14 @@ public class Cereja extends Plants{
     
     @Override
     public void defenderSe(){
-    	System.out.println("Cereja defendeu-se");
+    	//System.out.println("Cereja defendeu-se");
+    	JOptionPane.showMessageDialog(null, "Cereja defendeu-se");
     }
     @Override
     public void atacar(){
     	if(ativo){
-    		System.out.println("Cereja atacou");
+    		//System.out.println("Cereja atacou");
+    		JOptionPane.showMessageDialog(null, "Cereja atacou");
     	}
     }
     @Override

@@ -1,4 +1,6 @@
 package br.ufpa.cbcc.zumbi;
+import javax.swing.JOptionPane;
+
 import br.ufpa.cbcc.plants.Atacavel;
 import br.ufpa.cbcc.plants.Personagem;
 
@@ -30,12 +32,14 @@ public class Zumbi extends Personagem implements Atacavel{
 	
 	@Override
 	public void atacar(){
-		System.out.println("Zumbi atacou");
+		//System.out.println("Zumbi atacou");
+		JOptionPane.showMessageDialog(null, "Zumbi atacou");
 	}
 	
 	@Override
 	public void defenderSe(){
-		System.out.print("Zumbi defendeu-se");
+		//System.out.print("Zumbi defendeu-se");
+		JOptionPane.showMessageDialog(null, "Zumbi defendeu-se");
 	}
 
 }
