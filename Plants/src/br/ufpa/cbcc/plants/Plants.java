@@ -1,7 +1,7 @@
 package br.ufpa.cbcc.plants;
 
 
-	public abstract class Plants extends Personagem implements Atacavel{
+	public abstract class Plants extends Personagem{
 		
 	public Plants(){
 		super();

@@ -5,7 +5,7 @@ import br.ufpa.cbcc.plants.Atacavel;
 import br.ufpa.cbcc.plants.Personagem;
 
 
-public class Zumbi extends Personagem implements Atacavel{
+public class Zumbi extends Personagem{
 	public Zumbi(){
 		super();
 		//System.out.print("Construtor padrao de Zumbi criado");

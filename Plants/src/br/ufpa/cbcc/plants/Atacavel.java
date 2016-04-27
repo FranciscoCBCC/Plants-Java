@@ -3,7 +3,7 @@ package br.ufpa.cbcc.plants;
 
 public interface Atacavel {
 	//void verificarAcerto();
-	void verificarSatus(boolean ativo);
-    void diminuirHp(int vida);
-    void diminuirHp(int vida, int resistencia); 
+	public void verificarSatus(boolean ativo);
+    public void diminuirHp(int vida);
+    public void diminuirHp(int vida, int resistencia); 
 }
