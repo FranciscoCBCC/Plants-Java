@@ -20,8 +20,10 @@ public class Principal {
 		//System.out.println("\n2) Encerrar Jogo");
 		try{
 		String entrada;
-		entrada = JOptionPane.showInputDialog("Plants VS Zombies\n1) Iniciar Jogo\n2) Encerrar Jogo");
-		int opcao = Integer.parseInt(entrada);
+
+			entrada = JOptionPane.showInputDialog("Plants VS Zombies\n1) Iniciar Jogo\n2) Encerrar Jogo");
+			int opcao = Integer.parseInt(entrada);
+		
 		//opcao = JOptionPane.showConfirmDialog(null, "Opcao");
 		
 		
@@ -30,12 +32,13 @@ public class Principal {
 			
 		switch(opcao){
 			case 1:
-				try{
-					for(int i=0; i<=persons.length; i++){
+					for(int i=0; i<persons.length; i++){
 						/*if(persons[i] instanceof Personagem){
 							persons[i].atacar();
 							persons[i].defenderSe();
 						}*/
+						try{
+							Thread.sleep(500);
 						if(persons[i] instanceof Cereja){
 							((Cereja) persons[i]).explodir();
 						}
@@ -48,12 +51,11 @@ public class Principal {
 						if(persons[i] instanceof Zumbi){
 							((Zumbi) persons[i]).duplicar();
 						}
+						
+						}catch(Exception e){
+							e.printStackTrace();
+						}
 					}
-				}
-				catch (Exception excessao){
-					//System.out.print("\n\nExcedeu o limite do array, corrigir laco FOR: "+excessao);
-					JOptionPane.showMessageDialog(null, "Excedeu o limite do array, corrigir laco FOR: "+excessao);
-				}
 				
 				case 2:
 					JOptionPane.showMessageDialog(null, "Jogo encerrado");
@@ -62,10 +64,11 @@ public class Principal {
 					JOptionPane.showMessageDialog(null, "Opcao invalida, jogo encerrado");
 					System.exit(0);
 			}
+		
 		}
 		catch (Exception NumberFormatException){
 			//System.out.print("Opcao Invalida, digite somente numeros");
-			JOptionPane.showMessageDialog(null, "Opcao invalida, digite somente numeros, jogo encerrado");
+			JOptionPane.showMessageDialog(null, "Opcao invalida, digite somente numeros, digite novamente: ");
 		}
 	}
 }
