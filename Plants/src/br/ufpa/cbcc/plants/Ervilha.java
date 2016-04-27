@@ -45,7 +45,7 @@ public class Ervilha extends Plants{
 	}
 	
     public void boosterAttack(){
-    	System.out.println("Upgrade attack de Ervilha");
+    	JOptionPane.showMessageDialog(null,"Upgrade attack de Ervilha");
     }
     
 	@Override

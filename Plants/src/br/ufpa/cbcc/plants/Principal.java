@@ -32,22 +32,22 @@ public class Principal {
 			case 1:
 				try{
 					for(int i=0; i<=persons.length; i++){
-						if(persons[i] instanceof Personagem){
-							persons[i].atacar();
-							persons[i].defenderSe();
-						}
-						/*if(persons[i] instanceof Ervilha){
-							persons[i].atacar();
-							persons[i].defenderSe();
-						}
-						if(persons[i] instanceof Girassol){
-							persons[i].atacar();
-							persons[i].defenderSe();
-						}
-						if(persons[i] instanceof Zumbi){
+						/*if(persons[i] instanceof Personagem){
 							persons[i].atacar();
 							persons[i].defenderSe();
 						}*/
+						if(persons[i] instanceof Cereja){
+							((Cereja) persons[i]).explodir();
+						}
+						if(persons[i] instanceof Ervilha){
+							((Ervilha) persons[i]).boosterAttack();
+						}
+						if(persons[i] instanceof Girassol){
+							((Girassol) persons[i]).produzirSois();
+						}
+						if(persons[i] instanceof Zumbi){
+							((Zumbi) persons[i]).duplicar();
+						}
 					}
 				}
 				catch (Exception excessao){

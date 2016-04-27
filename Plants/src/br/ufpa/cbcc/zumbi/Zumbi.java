@@ -45,5 +45,9 @@ public class Zumbi extends Personagem implements Atacavel{
 		//System.out.print("Zumbi defendeu-se");
 		JOptionPane.showMessageDialog(null, "Zumbi defendeu-se");
 	}
+	
+	public void duplicar() {
+		JOptionPane.showMessageDialog(null,"O Zumbi duplicou-se");
+	}
 
 }

@@ -8,7 +8,7 @@ public class Cereja extends Plants{
 	public Cereja(){
 		super();
 		//System.out.println("Construtor padrao de Cereja criado");
-		prontoParaExplodir = false;
+		prontoParaExplodir = true;
 	}
 	
 	
@@ -43,7 +43,7 @@ public class Cereja extends Plants{
     	System.out.println("Cereja cresceu");
     }
     public void explodir(){
-    	System.out.println("Cereja pronta para explodir");
+    	JOptionPane.showMessageDialog(null,"Cereja explodiu");
     }
     
     @Override

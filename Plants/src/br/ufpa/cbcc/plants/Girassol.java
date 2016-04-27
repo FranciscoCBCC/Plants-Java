@@ -20,7 +20,7 @@ public class Girassol extends Plants{
 	}
     
     public void produzirSois(){
-    	System.out.println("Girassol produziu sois");
+    	JOptionPane.showMessageDialog(null,"Girassol produziu sois");
     }
     
     @Override
