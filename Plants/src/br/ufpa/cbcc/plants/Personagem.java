@@ -22,6 +22,14 @@ public abstract class Personagem implements Atacavel {
     	this.vida = vida;
     }
     
+    public Personagem(Personagem copia){
+		this.nomePersonagem = copia.nomePersonagem;
+		this.resistencia = copia.resistencia;
+		this.dano = copia.dano;
+		this.codigo = copia.codigo;
+		this.vida = copia.vida;
+	}
+    
     public void verificarStatus(boolean ativo){
     	if (ativo != true){
     		System.out.println("Personagem inativo");

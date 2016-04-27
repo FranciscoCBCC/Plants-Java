@@ -15,6 +15,10 @@ public class Zumbi extends Personagem implements Atacavel{
 		super(nomePersonagem, resistencia, dano, codigo, vida);
 	}
 	
+	public Zumbi(Zumbi copia){
+		super((Personagem)copia);
+	}
+	
 	@Override
 	public void verificarSatus(boolean ativo) {
 		if (ativo != true){

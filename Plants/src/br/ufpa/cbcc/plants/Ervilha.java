@@ -3,17 +3,23 @@ package br.ufpa.cbcc.plants;
 import javax.swing.JOptionPane;
 
 public class Ervilha extends Plants{
-	Ervilha(){
+	public Ervilha(){
 		super();
 		qtErvilha = 0;
 		levelAttack = 0;
 		//System.out.println("Construtor padrao de Ervilha criado");
 	}
 	
-	Ervilha(String nomePersonagem, int resistencia, int dano, int codigo, int vida, float recarga, int alcance, int qtErvilha, int levelAttack){
+	public Ervilha(String nomePersonagem, int resistencia, int dano, int codigo, int vida, float recarga, int alcance, int qtErvilha, int levelAttack){
 		super(nomePersonagem, resistencia, dano, codigo, vida, recarga, alcance);
 		this.qtErvilha = qtErvilha;
 		this.levelAttack = levelAttack;
+	}
+	
+	public Ervilha(Ervilha copia){
+		super((Plants)copia);
+		this.qtErvilha = copia.qtErvilha;
+		this.levelAttack = copia.levelAttack;
 	}
 	
 	@Override

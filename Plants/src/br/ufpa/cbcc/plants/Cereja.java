@@ -5,16 +5,21 @@ import br.ufpa.cbcc.zumbi.Zumbi;
 
 
 public class Cereja extends Plants{
-	Cereja(){
+	public Cereja(){
 		super();
 		//System.out.println("Construtor padrao de Cereja criado");
 		prontoParaExplodir = false;
 	}
 	
 	
-    Cereja(String nomePersonagem, int resistencia, int dano, int codigo, int vida, float recarga, int alcance, boolean prontoParaExplodir){
+    public Cereja(String nomePersonagem, int resistencia, int dano, int codigo, int vida, float recarga, int alcance, boolean prontoParaExplodir){
     	super(nomePersonagem, resistencia, dano, codigo, vida, recarga, alcance);
     	this.prontoParaExplodir = prontoParaExplodir;
+    }
+    
+    public Cereja(Cereja copia){
+    	super((Plants)copia);
+    	this.prontoParaExplodir = copia.prontoParaExplodir;
     }
     
     @Override

@@ -16,6 +16,12 @@ package br.ufpa.cbcc.plants;
 		this.alcance = alcance;
 	}
 	
+	public Plants(Plants copia){
+		super((Personagem)copia);
+		this.recarga = copia.recarga;
+		this.alcance = copia.alcance;
+	}
+	
 	public void verificarStatus(boolean ativo){
     	if (ativo != true){
     		System.out.println("Plants inativo");

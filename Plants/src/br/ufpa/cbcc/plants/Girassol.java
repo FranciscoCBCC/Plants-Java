@@ -3,16 +3,21 @@ package br.ufpa.cbcc.plants;
 import javax.swing.JOptionPane;
 
 public class Girassol extends Plants{
-	Girassol(){
+	public Girassol(){
 		super();
 		quantidadeSois = 0;
 		//System.out.println("Construtor padrao de Girassol criado");
 	} 
 	
-	Girassol(String nomePersonagem, int resistencia, int dano, int codigo, int vida, float recarga, int alcance){
+	public Girassol(String nomePersonagem, int resistencia, int dano, int codigo, int vida, float recarga, int alcance){
 		super(nomePersonagem, resistencia, dano, codigo, vida, recarga, alcance);
     	this.quantidadeSois = quantidadeSois;
     }
+	
+	public Girassol(Girassol copia){
+		super((Plants)copia);
+		this.quantidadeSois = copia.quantidadeSois;
+	}
     
     public void produzirSois(){
     	System.out.println("Girassol produziu sois");
