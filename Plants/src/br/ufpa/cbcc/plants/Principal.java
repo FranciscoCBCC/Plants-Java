@@ -32,13 +32,10 @@ public class Principal {
 			
 		switch(opcao){
 			case 1:
-					for(int i=0; i<persons.length; i++){
-						/*if(persons[i] instanceof Personagem){
-							persons[i].atacar();
-							persons[i].defenderSe();
-						}*/
-						try{
-							Thread.sleep(500);
+				try{
+					entrada = JOptionPane.showInputDialog("Digite a quantidade de personagem que desejas para o jogo: (MAXIMO 4)");
+					int quantidade = Integer.parseInt(entrada);	
+					for(int i=0; i<quantidade; i++){						
 						if(persons[i] instanceof Cereja){
 							((Cereja) persons[i]).explodir();
 						}
@@ -51,11 +48,11 @@ public class Principal {
 						if(persons[i] instanceof Zumbi){
 							((Zumbi) persons[i]).duplicar();
 						}
-						
-						}catch(Exception e){
-							e.printStackTrace();
-						}
 					}
+				}
+				catch(Exception excecao){
+					JOptionPane.showMessageDialog(null, "Excedeu o limite de personagens disponiveis");
+				}
 				
 				case 2:
 					JOptionPane.showMessageDialog(null, "Jogo encerrado");

@@ -6,8 +6,8 @@ package br.ufpa.cbcc.plants;
 	public Plants(){
 		super();
 		//System.out.println("Construtor padrao de Plants criado");
-		recarga = 0;
-		alcance = 0;		
+		this.recarga = 0;
+		this.alcance = 0;		
 	}
 	
 	public Plants(String nomePersonagem, int resistencia, int dano, int codigo, int vida, float recarga, int alcance){
